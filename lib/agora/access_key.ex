@@ -12,9 +12,7 @@ defmodule Agora.AccessKey do
       token = Agora.AccessKey.new_token(@app_id, @certificate, channel_name, user.id, [
         :join_channel,
         :publish_audio,
-        :publish_video,
-        :request_publish_audio,
-        :request_publish_video
+        :publish_video
       ])
 
   #### Client
