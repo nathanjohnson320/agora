@@ -162,7 +162,7 @@ defmodule Agora.AccessKey do
     uid = if uid == 0, do: "", else: uid |> to_string()
 
     message = generate_message(salt, ts, privileges)
-    message_length = String.length(message)
+    message_length = byte_size(message)
     header = <<app_id::binary, channel_name::binary, uid::binary, message::binary>>
     signature = sign(app_certificate, header)
     signature_length = byte_size(signature)
