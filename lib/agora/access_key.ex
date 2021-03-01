@@ -146,7 +146,7 @@ defmodule Agora.AccessKey do
           binary,
           binary,
           binary,
-          [atom()],
+          [{atom(), integer()}],
           integer(),
           integer()
         ) :: binary()
