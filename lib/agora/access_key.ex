@@ -93,7 +93,7 @@ defmodule Agora.AccessKey do
         expires_at::unsigned-integer-size(32)-little
       >>
 
-      acc <> privilege_binary
+      << acc :: bitstring >> <> privilege_binary
     end)
   end
 
