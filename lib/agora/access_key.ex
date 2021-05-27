@@ -181,7 +181,7 @@ defmodule Agora.AccessKey do
   end
 
   defp sign(key, value) do
-    :crypto.hmac(:sha256, key, value)
+    :crypto.mac(:hmac, :sha256, key, value)
   end
 
   defp crc32(data), do: :erlang.crc32(data)
