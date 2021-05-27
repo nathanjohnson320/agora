@@ -10,10 +10,14 @@ by adding `agora` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:agora, "~> 0.1.0"}
+    {:agora, "~> 2.0.0"}
   ]
 end
 ```
+
+## Notes
+
+* For OTP < 22 use version 1.0.2
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can

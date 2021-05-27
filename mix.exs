@@ -4,7 +4,7 @@ defmodule Agora.MixProject do
   def project do
     [
       app: :agora,
-      version: "1.0.2",
+      version: "2.0.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
